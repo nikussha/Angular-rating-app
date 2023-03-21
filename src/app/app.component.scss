@@ -1,0 +1,110 @@
+
+    .rectangle{
+        margin: 150px auto;
+        width: 412px;
+        height: 450px;
+        background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+      div{
+        width: 380px;
+        margin-top: 10px;
+      }
+      .text-div{
+        h3{
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 35px;
+            margin-bottom: 5px;
+        }
+        p{
+            color: rgba(150, 159, 173, 1);
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+        }
+      }
+      .submit-btn{
+        width: 380px;
+        button{
+          width: 370px;
+          margin: 10px auto;
+          height: 40px;
+          background-color: #FC7614;
+          border-style: none;
+          border-radius: 22px;
+          cursor: pointer;
+          color: #ffff;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 17.72px;
+          letter-spacing: 1.86667px;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          &:hover{
+
+           background-color: #ffff; 
+           color: rgba(252, 118, 20, 1);
+          }
+        }
+      }
+    }
+
+    .wrapper{
+        margin: 150px auto;
+          width: 412px;
+          height: 416px;
+          background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+          border-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          padding: 25px;
+          div{
+            text-align: center;
+          }
+          .img{
+            width: auto;
+            height: 150px;
+          }
+          .tnx{
+            margin-top: 20px;
+            color: #ffff;
+            outline-offset: 3px;
+            outline-color: rgb(216, 216, 216);
+            p{
+              font-size: 15px;
+              color:rgba(150, 159, 173, 1);
+              font-weight: 400;
+            }
+
+          }
+          .select{
+            font-size: 20px;
+            font-weight: 600;
+            color:rgba(252, 118, 20, 1) ;
+          }
+    }
+
+ 
+    @media only screen and (max-width:450px){
+      .rectangle {
+      width: 100%;
+      min-height: 100vh;
+      background-color: red!important;
+      position: relative;
+     .submit-btn{
+      width: 100%;
+      button{
+        width: 100%;
+      }
+     }
+      div{
+        width: auto;
+      }
+      }
+      .wrapper{
+        width: auto;
+        
+      }
+    }

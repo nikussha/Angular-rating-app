@@ -1,0 +1,38 @@
+.response{
+    width: 380px;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    .btns{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+        margin: 7px;
+        
+        button{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            background-color:#262E38;
+            border-style: none;
+            text-align: center;
+            color: #ffff
+            ;
+        }
+    }
+    .selected{
+        background-color: rgb(196, 196, 196)!important;
+    }
+}
+
+
+@media (max-width:450px) {
+    .response{
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+}

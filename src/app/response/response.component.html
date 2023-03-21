@@ -1,0 +1,10 @@
+<div class="response">
+  <div class="btns" btn *ngFor="let numb of btns">
+    <button
+      [ngClass]="numb.isselected ? 'selected' : ''"
+      (click)="setselected(numb.id)"
+    >
+      <strong>{{ numb.val }}</strong>
+    </button>
+  </div>
+</div>

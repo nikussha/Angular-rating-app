@@ -1,0 +1,38 @@
+<div class="rectangle" *ngIf="!bool; else otherrect">
+  <div style="margin-bottom: 25px" class="icon">
+    <button style="background-color: #232a34" mat-icon-button>
+      <mat-icon style="color: rgb(244, 163, 11)">star</mat-icon>
+    </button>
+  </div>
+  <div class="text-div">
+    <h3 style="color: #ffffff">How Did We Go?</h3>
+    <p>
+      Please let us know how we did with your support request. All feedback is
+      appreciated to help us improve our offering!
+    </p>
+  </div>
+
+  <app-response #resp></app-response>
+  <ng-container *ngIf="!serv.selected"
+    ><p style="color: rgb(171, 54, 54)">please rate us</p></ng-container
+  >
+  <div class="submit-btn">
+    <button [disabled]="!serv.selected" (click)="setbool()">SUBMIT</button>
+  </div>
+</div>
+
+<ng-template #otherrect>
+  <div class="wrapper">
+    <div class="img"></div>
+    <div class="select">
+      <p>You selected {{ serv.selected.val }} out of 5</p>
+    </div>
+    <div class="tnx">
+      <h1>Thank You!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+  </div>
+</ng-template>
